@@ -128,20 +128,6 @@ const cart = {
         });
         cart.cUpdate();
     },
-    takeOut(pid, amount=1){
-        cart.items = cart.items.map(item=>{
-            if(item.pid === pid) {
-                item.amount = item.amount - amount;
-            }
-            return item;
-        });
-        cart.items.forEach(async item=>{
-            if(item.pid === pid && item.amount === 0) {
-                cart.removeItem(pid);
-            }
-        });
-        cart.cUpdate();
-    },
     removeItem(pid){
         cart.items = cart.items.filter(item=>{
             if(item.pid != pid){
