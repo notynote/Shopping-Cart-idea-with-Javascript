@@ -1,0 +1,47 @@
+{
+    "product": {
+        "1": {
+            "pid": "1",
+            "name": "Camera",
+            "desc": "A very stylist camera",
+            "img": "https://picsum.photos/id/250/300/200",
+            "price": 1000
+        },
+        "2": {
+            "pid": "2",
+            "name": "Mug",
+            "desc": "A kind of simple mug",
+            "img": "https://picsum.photos/id/30/300/200" ,
+            "price": 10
+        },
+        "3": {
+            "pid": "3",
+            "name": "Airplane",
+            "desc": "Yeah we sell Airplane too",
+            "img": "https://picsum.photos/id/364/300/200" ,
+            "price": 1000000
+        },
+        "4": {
+            "pid": "4",
+            "name": "Hut",
+            "desc": "What a hut? here you go!",
+            "img": "https://picsum.photos/id/372/300/200" ,
+            "price": 100000
+        },
+        "5": {
+            "pid": "5",
+            "name": "Coffee",
+            "desc": "Let's get back to something realistic",
+            "img": "https://picsum.photos/id/431/300/200" ,
+            "price": 100
+        },
+        "6": {
+            "pid": "6",
+            "name": "Laptop",
+            "desc": "Hope it is a good one",
+            "img": "https://picsum.photos/id/445/300/200" ,
+            "price": 10000
+        }
+    }
+        
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark special-color-dark">
+          <div class="container">
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="my-5 text-center">You can find a source code at<br><a href="https://github.com/notynote/Shopping-Cart-idea-with-Javascript">NotyNote's Github</a></h1>
+            <!-- product row -->
+            <div class="row product">
+
+            </div>
+            <!-- cart row -->
+            <div class="row mt-5">
+                <div class="jumbotron w-100">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="card mb-3">
+                                <div class="card-body">
+
+                                <h5 class="mb-3">Cart - <a href="#cart" onclick="clearCart()">Clear Cart</a></h5> 
+
+                                <ul class="list-group list-group-flush" id="cart">
+                                </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+
+                                <h5 class="mb-3">Due today</h5>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    Products
+                                    <span id="price">$0</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    Shipping
+                                    <span>Free</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <div>
+                                        <strong>Total</strong>
+                                        <strong>
+                                        <p class="mb-0">(including VAT)</p>
+                                        </strong>
+                                    </div>
+                                    <span id="totalPrice"><strong>$0</strong></span>
+                                    </li>
+                                </ul>
+
+                                <button type="button" class="btn btn-primary btn-block waves-effect waves-light" onclick="checkOut()">go to checkout</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+
+
+    <footer class="page-footer text-center mt-4 pt-4 special-color-dark fixed-bottom">
+        <div class="container">
+        </div>
+        <div class="footer-copyright py-3 text-center">
+          <div class="containter-fluid">
+            © 2020 Copyright: <a href="https://www.notynote.com"> Pathompong (Note) Phongsaporamut </a>
+          </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="loadProducts.js"></script>
+</body>
+</html>
